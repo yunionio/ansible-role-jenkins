@@ -44,3 +44,7 @@
     name: jenkins
     state: "{{ jenkins_package_state }}"
   notify: configure default users
+
+- name: Make sure configure default users
+  shell: "true"
+  notify: configure default users
